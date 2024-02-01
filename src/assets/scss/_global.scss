@@ -1,0 +1,41 @@
+/*--------------------------------------------|
+|                   FONTS                     |
+|--------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*--------------------------------------------|
+|                   COLORS                    |
+|--------------------------------------------*/
+:root {
+    --page_background: #000;
+    --panel_background: rgba(20, 27, 34, 0.70);
+    --main_blue: #607BCC;
+}
+
+/*--------------------------------------------|
+|                   PAGES                     |
+|--------------------------------------------*/
+body {
+    background: var(--page_background);
+    .panel {
+        background: var(--panel_background);
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*--------------------------------------------|
+|                   MIXINS                    |
+|--------------------------------------------*/
+@mixin toCenter() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

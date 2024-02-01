@@ -1,0 +1,88 @@
+.neutron_interface {
+    .chat_interface {
+        border-radius: 20px;
+        background: rgba(20, 27, 34, 0.70);
+        padding: 20px 5%;
+        margin-top: 10px;
+        .chat_container {
+            min-height: 320px;
+            @include toCenter();
+            flex-direction: column;
+            gap: 20px;
+            span {
+                color: #FFF;
+                font-size: 16px; 
+                font-weight: 500; 
+            }
+        }
+        .prompt_container {
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid #FAFBFC;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            input {
+                width: calc(100% - 50px - 20px);
+                color: white;
+                outline: none;
+                background-color: transparent;
+                border: 0;
+                height: 30px;
+            }
+            svg {
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                transition: .3s;
+                border-radius: 5px;
+                &:hover {
+                    background: rgba(69, 77, 85, 0.7);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .neutron_interface {
+        .chat_interface { 
+            .chat_container {
+                min-height:220px;
+                @include toCenter();
+                flex-direction: column;
+                gap: 20px;
+                span {
+                    color: #FFF;
+                    font-size: 16px; 
+                    font-weight: 500; 
+                }
+            }
+            .prompt_container {
+                padding: 5px;
+                border-radius: 10px;
+                border: 1px solid #FAFBFC;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                input {
+                    width: calc(100% - 50px - 20px);
+                    color: white;
+                    outline: none;
+                    background-color: transparent;
+                    border: 0;
+                    height: 30px;
+                }
+                svg {
+                    width: 30px;
+                    height: 30px;
+                    cursor: pointer;
+                    transition: .3s;
+                    border-radius: 5px;
+                    &:hover {
+                        background: rgba(69, 77, 85, 0.7);
+                    }
+                }
+            }
+        }
+    }
+}
